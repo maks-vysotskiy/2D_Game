@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class CustomAnimation
@@ -7,7 +6,7 @@ public class CustomAnimation
     public Track Track;
     public List<Sprite> Sprites;
     public bool Loop;
-    public float Speed = 10.0f;
+    public float Speed = 10f;
     public float Counter;
     public bool Sleeps;
 
@@ -19,15 +18,17 @@ public class CustomAnimation
         }
 
         Counter += Time.deltaTime * Speed;
+        Debug.Log(Counter);
+        Debug.Log(Speed);
 
-        if(Loop)
+        if (Loop)
         {
             while(Counter >Sprites.Count)
             {
                 Counter -= Sprites.Count;
             }
         }
-        else if(Counter>Sprites.Count) // если не Loop и плюс когда Counter>Sprites.Count
+        else if(Counter>Sprites.Count) 
         {
             Counter = Sprites.Count - 1;
             Sleeps = true;

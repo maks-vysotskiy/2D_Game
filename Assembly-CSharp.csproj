@@ -69,6 +69,7 @@
     <Compile Include="Assets\Code\ParalaxManager.cs" />
     <Compile Include="Assets\Code\Root.cs" />
     <Compile Include="Assets\Code\SpriteAnimationsConfig.cs" />
+    <Compile Include="Assets\Code\SpriteAnimator.cs" />
     <Compile Include="Assets\Code\SpriteSequence.cs" />
     <Compile Include="Assets\Code\Track.cs" />
     <Reference Include="UnityEngine">

@@ -5,6 +5,6 @@ using System.Collections.Generic;
 [Serializable]
 public class SpriteSequence
 {
-    public Track track;
+    public Track Track;
     public List<Sprite> Sprites = new List<Sprite>();
 }
